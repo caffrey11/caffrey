@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JaiL BreaK_Hooligans - ფოტო გალერეა</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Fixed GameTracker Banner -->
+    <div class="fixed-banner">
+        <a href="https://www.gametracker.com/server_info/185.143.177.14:246/" target="_blank">
+            <img src="https://cache.gametracker.com/server_info/185.143.177.14:246/b_160_400_0_00ff7b_ffffff_ffffff_000000_0_1_1.png" border="0" width="160" height="330" alt="GameTracker Server Banner"/>
+        </a>
+    </div>
+
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>JaiL BreaK_Hooligans</span>
+            </div>
+            <nav>
+                <button class="menu-btn" id="gamesBtn">
+                    <i class="fas fa-dice"></i>
+                    თამაშები
+                </button>
+                <button class="menu-btn" id="rulesBtn">
+                    <i class="fas fa-book"></i>
+                    წესები
+                </button>
+                <button class="menu-btn" id="contactBtn">
+                    <i class="fas fa-users"></i>
+                    კონტაქტი
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="site-title" id="animatedTitle">
+                    <span class="title-main" id="animatedTitleText">JaiL BreaK_Hooligans</span>
+                </h1>
+                <div class="server-info">
+                    <div class="server-ip">
+                        <i class="fas fa-server"></i>
+                        <span>სერვერის IP: <strong>185.143.177.14:246</strong></span>
+                    </div>
+                    <button class="copy-btn" id="copyBtn">
+                        <i class="fas fa-copy"></i>
+                        კოპირება
+                    </button>
+                </div>
+                
+                <div class="mvp-section">
+                    <div class="mvp-card">
+                        <div class="mvp-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="mvp-content">
+                            <h3>მაფია MVP</h3>
+                            <p class="mvp-name">[MVP სახელი]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <h2 class="section-title">
+                <i class="fas fa-images"></i>
+                Gallery
+            </h2>
+            
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="all">
+                    <i class="fas fa-th"></i>
+                    ყველა
+                </button>
+                <button class="filter-btn" data-category="jailbreak">
+                    <i class="fas fa-jail"></i>
+                    Jail Break
+                </button>
+                <button class="filter-btn" data-category="kz">
+                    <i class="fas fa-mountain"></i>
+                    KZ
+                </button>
+                <button class="filter-btn" data-category="mafia">
+                    <i class="fas fa-user-secret"></i>
+                    მაფია
+                </button>
+                <button class="filter-btn" data-category="bunnyhop">
+                    <i class="fas fa-running"></i>
+                    Bunnyhop
+                </button>
+                <button class="filter-btn" data-category="football">
+                    <i class="fas fa-futbol"></i>
+                    Football
+                </button>
+                <button class="filter-btn" data-category="zombies">
+                    <i class="fas fa-skull"></i>
+                    ზომბები
+                </button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery">
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Jail Break Photos -->
+                    <div class="gallery-photo" data-category="jailbreak">
+                        <img src="images/JB1.png" alt="Jail Break თამაში 1">
+                        <div class="photo-overlay">
+                            <span class="photo-category">Jail Break</span>
+                        </div>
+                    </div>
+                    <div class="gallery-photo" data-category="jailbreak">
+                        <img src="images/JB2.png" alt="Jail Break თამაში 2">
+                        <div class="photo-overlay">
+                            <span class="photo-category">Jail Break</span>
+                        </div>
+                    </div>
+                    <div class="gallery-photo" data-category="jailbreak">
+                        <img src="images/JB3.png" alt="Jail Break თამაში 3">
+                        <div class="photo-overlay">
+                            <span class="photo-category">Jail Break</span>
+                        </div>
+                    </div>
+                    <div class="gallery-photo" data-category="jailbreak">
+                        <img src="images/JB4.png" alt="Jail Break თამაში 4">
+                        <div class="photo-overlay">
+                            <span class="photo-category">Jail Break</span>
+                        </div>
+                    </div>
+                    <div class="gallery-photo" data-category="jailbreak">
+                        <img src="images/jb5.png" alt="Jail Break თამაში 5">
+                        <div class="photo-overlay">
+                            <span class="photo-category">Jail Break</span>
+                        </div>
+                    </div>
+
+                    <!-- KZ Photos -->
+                    <div class="gallery-photo" data-category="kz">
+                        <img src="images/KZ1.png" alt="KZ კლიმბინგი 1">
+                        <div class="photo-overlay">
+                            <span class="photo-category">KZ</span>
+                        </div>
+                    </div>
+                    <div class="gallery-photo" data-category="kz">
+                        <img src="images/kz2.png" alt="KZ კლიმბინგი 2">
+                        <div class="photo-overlay">
+                            <span class="photo-category">KZ</span>
+                        </div>
+                    </div>
+
+                    <!-- Mafia Photos -->
+                    <div class="gallery-photo" data-category="mafia">
+                        <img src="images/mafia1.jpg" alt="მაფია თამაში 1">
+                        <div class="photo-overlay">
+                            <span class="photo-category">მაფია</span>
+                        </div>
+                    </div>
+                    <div class="gallery-photo" data-category="mafia">
+                        <img src="images/mafia2.jpg" alt="მაფია თამაში 2">
+                        <div class="photo-overlay">
+                            <span class="photo-category">მაფია</span>
+                        </div>
+                    </div>
+
+                    <!-- Football Photos -->
+                    <div class="gallery-photo" data-category="football">
+                        <img src="images/football.jpg" alt="Football თამაში 1">
+                        <div class="photo-overlay">
+                            <span class="photo-category">Football</span>
+                        </div>
+                    </div>
+                    <div class="gallery-photo" data-category="football">
+                        <img src="images/football2.png" alt="Football თამაში 2">
+                        <div class="photo-overlay">
+                            <span class="photo-category">Football</span>
+                        </div>
+                    </div>
+
+                    <!-- Zombies Photos -->
+                    <div class="gallery-photo" data-category="zombies">
+                        <img src="images/Zombie.jpg" alt="ზომბები თამაში 1">
+                        <div class="photo-overlay">
+                            <span class="photo-category">ზომბები</span>
+                        </div>
+                    </div>
+                    <div class="gallery-photo" data-category="zombies">
+                        <img src="images/zombie2.jpg" alt="ზომბები თამაში 2">
+                        <div class="photo-overlay">
+                            <span class="photo-category">ზომბები</span>
+                        </div>
+                    </div>
+
+                    <!-- Bunnyhop Photos -->
+                    <div class="gallery-photo" data-category="bunnyhop">
+                        <img src="images/BHop.jpg" alt="Bunnyhop თამაში 1">
+                        <div class="photo-overlay">
+                            <span class="photo-category">Bunnyhop</span>
+                        </div>
+                    </div>
+                    <div class="gallery-photo" data-category="bunnyhop">
+                        <img src="images/Bhop2.jpg" alt="Bunnyhop თამაში 2">
+                        <div class="photo-overlay">
+                            <span class="photo-category">Bunnyhop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>100+</h3>
+                        <p>აქტიური მოთამაშე</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>24/7</h3>
+                        <p>სერვერი ხელმისაწვდომი</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>15+</h3>
+                        <p>ფოტო გალერეაში</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-banner">
+                <a href="https://www.gametracker.com/server_info/185.143.177.14:246/" target="_blank">
+                    <img src="https://cache.gametracker.com/server_info/185.143.177.14:246/b_560_95_1.png" border="0" width="560" height="95" alt="GameTracker Banner"/>
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="social-link">
+                    <i class="fab fa-discord"></i>
+                    Discord
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-facebook"></i>
+                    Facebook
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-steam"></i>
+                    Steam
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="გადიდებული ფოტო">
+    </div>
+
+    <!-- Games Modal -->
+    <div class="modal" id="gamesModal">
+        <div class="modal-content">
+            <span class="modal-close" id="gamesClose">&times;</span>
+            <h2><i class="fas fa-dice"></i> ჩვენი თამაშები</h2>
+            <div class="games-modal-grid">
+                <div class="modal-game-card">
+                    <h3><i class="fas fa-jail"></i> Jail Break</h3>
+                    <p>ციხიდან გაქცევა და მრავალფეროვანი თავგადასავლები. გაიქეცით ციხიდან ან დაიჭირეთ გაქცეულები!</p>
+                </div>
+                <div class="modal-game-card">
+                    <h3><i class="fas fa-mountain"></i> KZ (Climbing)</h3>
+                    <p>გაიარეთ რთული დაბრკოლებები და გახდით საუკეთესო კლაიმბერი!</p>
+                </div>
+                <div class="modal-game-card">
+                    <h3><i class="fas fa-user-secret"></i> მაფია</h3>
+                    <p>უნიკალური თამაში რომელსაც მხოლოდ ჩვენ სერვერზე ითამაშებთ. ხარ სტრატეგიული მოთამაშე? შეგიძლია ქალაქის დაცვა? მაშინ შემოგვიერთდი!</p>
+                </div>
+                <div class="modal-game-card">
+                    <h3><i class="fas fa-running"></i> Bunnyhop</h3>
+                    <p>სწრაფი მოძრაობა და ტექნიკა. გააუმჯობესეთ თქვენი სიჩქარე!</p>
+                </div>
+                <div class="modal-game-card">
+                    <h3><i class="fas fa-futbol"></i> Football</h3>
+                    <p>სპორტული თამაში და გუნდური სული. ითამაშეთ ფეხბურთი ვირტუალურ სამყაროში!</p>
+                </div>
+                <div class="modal-game-card">
+                    <h3><i class="fas fa-skull"></i> ზომბები</h3>
+                    <p>საშიში თავგადასავალი. გადარებით zombie apocalypse-ში?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rules Modal -->
+    <div class="modal" id="rulesModal">
+        <div class="modal-content">
+            <span class="modal-close" id="rulesClose">&times;</span>
+            <h2><i class="fas fa-book"></i> სერვერის წესები</h2>
+            <ul class="rules-list">
+                <li><i class="fas fa-check"></i> პატივი ეცით სხვა მოთამაშეებს</li>
+                <li><i class="fas fa-check"></i> ყველანაირი cheat ისჯება ბანით</li>
+                <li><i class="fas fa-check"></i> არ დაარღვიოთ ცენზურა</li>
+                <li><i class="fas fa-check"></i> მიჰყევით ადმინის ინსტრუქციებს</li>
+                <li><i class="fas fa-heart"></i> გიყვარდეთ ერთმანეთი <3</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <span class="modal-close" id="contactClose">&times;</span>
+            <h2><i class="fas fa-users"></i> კონტაქტი</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fab fa-discord"></i>
+                    <div>
+                        <strong>Discord:</strong>
+                        <a href="#" target="_blank">შემოუერთდით ჩვენს Discord-ს</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-server"></i>
+                    <div>
+                        <strong>სერვერის IP:</strong>
+                        <span>185.143.177.14:246</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-crown"></i>
+                    <div>
+                        <strong>მთავარი ადმინი:</strong>
+                        <a href="#" target="_blank">FB პროფილი</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

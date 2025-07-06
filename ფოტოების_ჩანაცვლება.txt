@@ -1,0 +1,143 @@
+📸 ფოტოების ჩანაცვლების ინსტრუქცია - გამარტივებული სისტემა
+
+🎯 როგორ შეცვალოთ placeholder ფოტოები თქვენი ფოტოებით:
+
+1. გადაიტანეთ თქვენი ფოტოები "images" ფოლდერში
+2. გახსენით "index.html" ფაილი
+3. იპოვეთ "gallery-grid" სექცია (დაახლოებით 60-ე ხაზზე)
+4. შეცვალეთ "src" ფაილები და "data-category" ატრიბუტები:
+
+🎮 **Jail Break ფოტოები (5 ფოტო):**
+```html
+<div class="gallery-photo" data-category="jailbreak">
+    <img src="images/JB1.png" alt="Jail Break თამაში 1">
+    <div class="photo-overlay">
+        <span class="photo-category">Jail Break</span>
+    </div>
+</div>
+<div class="gallery-photo" data-category="jailbreak">
+    <img src="images/JB2.png" alt="Jail Break თამაში 2">
+    <div class="photo-overlay">
+        <span class="photo-category">Jail Break</span>
+    </div>
+</div>
+<div class="gallery-photo" data-category="jailbreak">
+    <img src="images/JB3.png" alt="Jail Break თამაში 3">
+    <div class="photo-overlay">
+        <span class="photo-category">Jail Break</span>
+    </div>
+</div>
+<div class="gallery-photo" data-category="jailbreak">
+    <img src="images/JB4.png" alt="Jail Break თამაში 4">
+    <div class="photo-overlay">
+        <span class="photo-category">Jail Break</span>
+    </div>
+</div>
+<div class="gallery-photo" data-category="jailbreak">
+    <img src="images/jb5.png" alt="Jail Break თამაში 5">
+    <div class="photo-overlay">
+        <span class="photo-category">Jail Break</span>
+    </div>
+</div>
+```
+
+🎮 **KZ ფოტოები (2 ფოტო):**
+```html
+<div class="gallery-photo" data-category="kz">
+    <img src="images/KZ1.png" alt="KZ კლიმბინგი 1">
+    <div class="photo-overlay">
+        <span class="photo-category">KZ</span>
+    </div>
+</div>
+<div class="gallery-photo" data-category="kz">
+    <img src="images/kz2.png" alt="KZ კლიმბინგი 2">
+    <div class="photo-overlay">
+        <span class="photo-category">KZ</span>
+    </div>
+</div>
+```
+
+🎮 **მაფია ფოტოები (2 ფოტო):**
+```html
+<div class="gallery-photo" data-category="mafia">
+    <img src="images/mafia1.jpg" alt="მაფია თამაში 1">
+    <div class="photo-overlay">
+        <span class="photo-category">მაფია</span>
+    </div>
+</div>
+<div class="gallery-photo" data-category="mafia">
+    <img src="images/mafia2.jpg" alt="მაფია თამაში 2">
+    <div class="photo-overlay">
+        <span class="photo-category">მაფია</span>
+    </div>
+</div>
+```
+
+📝 **ახალი გამარტივებული სტრუქტურა:**
+- **მხოლოდ ფოტო გალერეა** - უფრო მარტივი და ფოკუსირებული
+- **კატეგორიული ფილტრი** - ღილაკები ყველა კატეგორიისთვის
+- **ანიმირებული გადასვლები** - ლამაზი ეფექტები კატეგორიების შეცვლისას
+- **Lightbox ფუნქცია** - ფოტოების დიდი ზომით ნახვა
+
+🎮 **თამაშების კატეგორიები:**
+- jailbreak - Jail Break თამაში
+- kz - KZ კლიმბინგი
+- mafia - მაფია
+- bunnyhop - Bunnyhop
+- football - Football
+- zombies - ზომბები
+
+💡 **ფოტოების დამატების რჩევები:**
+- გამოიყენეთ JPG ან PNG ფორმატი
+- ფოტოების ზომა: 800x600 პიქსელი
+- ფაილის სახელი ინგლისური იყოს
+- ფაილის ზომა 1MB-ზე ნაკლები
+- ფოტოები უნდა შეესაბამებოდეს კატეგორიას
+- დაამატეთ ახალი ფოტოები იმავე ფორმატით
+
+🔧 **ფოტოების ოპტიმიზაცია:**
+- TinyPNG.com - ფაილის ზომის შემცირება
+- Canva.com - ფოტოების რედაქტირება
+- Unsplash.com - უფასო ფოტოები
+
+🎨 **ახალი UI ფუნქციები:**
+- გამარტივებული დიზაინი
+- კატეგორიული ფილტრი
+- ანიმირებული ფილტრაცია
+- Lightbox ფუნქცია
+- რესპონსიული დიზაინი
+
+📋 **მიმდინარე ფოტოები:**
+- **Jail Break**: JB1.png, JB2.png, JB3.png, JB4.png, jb5.png (5 ფოტო)
+- **KZ**: KZ1.png, kz2.png (2 ფოტო)
+- **მაფია**: mafia1.jpg, mafia2.jpg (2 ფოტო)
+
+➕ **ახალი ფოტოების დამატება:**
+1. გადაიტანეთ ფოტო "images" ფოლდერში
+2. დაამატეთ HTML კოდი შესაბამის კატეგორიაში
+3. შეცვალეთ src, alt და data-category ატრიბუტები
+
+📊 **ფოტოების სტატისტიკა:**
+- სულ: 9 ფოტო
+- Jail Break: 5 ფოტო (55.6%)
+- KZ: 2 ფოტო (22.2%)
+- მაფია: 2 ფოტო (22.2%)
+
+🎯 **საიტის ახალი სტრუქტურა:**
+1. **Header** - ლოგო და მენიუ ღილაკები
+2. **Hero Section** - სათაური და სერვერის IP
+3. **Gallery Section** - ფოტო გალერეა კატეგორიული ფილტრით
+4. **Stats Section** - სტატისტიკა
+5. **Footer** - GameTracker ბანერი და სოციალური ბმულები
+
+✨ **წაშლილი ელემენტები:**
+- "მრავალფეროვანი გასართობი" აღწერა
+- თამაშების ბარათების სექცია
+- დუბლირებული მენიუ 
+🎨 ახალი UI ფუნქციები:
+- თამაშების კატეგორიები
+- ინტერაქტიული ფოტო გალერეა
+- ჰოვერ ეფექტები
+- მოდალური ფანჯრები
+- ანიმაციები
+- რესპონსიული დიზაინი 
